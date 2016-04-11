@@ -4,6 +4,62 @@ namespace PhantomNet
 {
     public class StringProcessor
     {
+        public string TrimStringByWord(string s, int maxLength)
+        {
+            if (s == null)
+            {
+                return null;
+            }
+
+            var ret = s;
+            if (ret.Trim().Length > maxLength)
+            {
+                ret = ret.Trim().Substring(0, maxLength);
+                if (!ret.EndsWith(" ") && s[maxLength] != ' ' && (ret = ret.Trim()).Contains(" "))
+                {
+                    ret = ret.Substring(0, ret.LastIndexOf(' ')).Trim();
+                }
+                ret = string.Format("{0}...", ret.Trim());
+            }
+            return ret;
+
+        }
+
+        public string RemoveHtmlTags(string html)
+        {
+            // Faster than using regular expression
+            if (html == null) { return null; }
+            html = html.Replace("&nbsp;", " ")
+                       .Replace("<br>", "\n")
+                       .Replace("<br />", "\n")
+                       .Replace("<p", "\n<p")
+                       .Replace("<div", "\n<div");
+            char[] array = new char[html.Length];
+            int arrayIndex = 0;
+            bool inside = false;
+
+            for (int i = 0; i < html.Length; i++)
+            {
+                char let = html[i];
+                if (let == '<')
+                {
+                    inside = true;
+                    continue;
+                }
+                if (let == '>')
+                {
+                    inside = false;
+                    continue;
+                }
+                if (!inside)
+                {
+                    array[arrayIndex] = let;
+                    arrayIndex++;
+                }
+            }
+            return new string(array, 0, arrayIndex);
+        }
+
         public string ToAscii(string source)
         {
             string unicode = "áàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴđĐ",
