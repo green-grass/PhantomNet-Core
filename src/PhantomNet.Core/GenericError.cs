@@ -1,6 +1,6 @@
 ﻿namespace PhantomNet
 {
-    public class EntityError
+    public class GenericError
     {
         public string Code { get; set; }
 

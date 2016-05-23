@@ -2,9 +2,9 @@
 {
     public class ErrorDescriber
     {
-        public virtual EntityError DefaultError()
+        public virtual GenericError DefaultError()
         {
-            return new EntityError {
+            return new GenericError {
                 Code = nameof(DefaultError),
                 Description = Resources.DefaultError
             };

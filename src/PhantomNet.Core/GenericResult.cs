@@ -3,20 +3,20 @@ using System.Linq;
 
 namespace PhantomNet
 {
-    public class EntityResult
+    public class GenericResult
     {
-        private static readonly EntityResult _success = new EntityResult { Succeeded = true };
-        private List<EntityError> _errors = new List<EntityError>();
+        private static readonly GenericResult _success = new GenericResult { Succeeded = true };
+        private List<GenericError> _errors = new List<GenericError>();
 
         public bool Succeeded { get; protected set; }
 
-        public IEnumerable<EntityError> Errors => _errors;
+        public IEnumerable<GenericError> Errors => _errors;
 
-        public static EntityResult Success => _success;
+        public static GenericResult Success => _success;
 
-        public static EntityResult Failed(params EntityError[] errors)
+        public static GenericResult Failed(params GenericError[] errors)
         {
-            var result = new EntityResult { Succeeded = false };
+            var result = new GenericResult { Succeeded = false };
             if (errors != null)
             {
                 result._errors.AddRange(errors);
