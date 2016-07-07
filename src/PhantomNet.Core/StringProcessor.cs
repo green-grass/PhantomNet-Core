@@ -1,21 +1,24 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace PhantomNet
 {
     public class StringProcessor
     {
-        public string TrimStringByWord(string s, int maxLength)
+        public string TrimStringByWord(string source, int maxLength)
         {
-            if (s == null)
+            if (source == null)
             {
                 return null;
             }
 
-            var ret = s;
+            var ret = source;
             if (ret.Trim().Length > maxLength)
             {
                 ret = ret.Trim().Substring(0, maxLength);
-                if (!ret.EndsWith(" ") && s[maxLength] != ' ' && (ret = ret.Trim()).Contains(" "))
+                if (!ret.EndsWith(" ") && source[maxLength] != ' ' && (ret = ret.Trim()).Contains(" "))
                 {
                     ret = ret.Substring(0, ret.LastIndexOf(' ')).Trim();
                 }
@@ -25,22 +28,26 @@ namespace PhantomNet
 
         }
 
-        public string RemoveHtmlTags(string html)
+        public string RemoveHtmlTags(string source)
         {
+            if (source == null)
+            {
+                return null;
+            }
+
             // Faster than using regular expression
-            if (html == null) { return null; }
-            html = html.Replace("&nbsp;", " ")
+            source = source.Replace("&nbsp;", " ")
                        .Replace("<br>", "\n")
                        .Replace("<br />", "\n")
                        .Replace("<p", "\n<p")
                        .Replace("<div", "\n<div");
-            char[] array = new char[html.Length];
+            char[] array = new char[source.Length];
             int arrayIndex = 0;
             bool inside = false;
 
-            for (int i = 0; i < html.Length; i++)
+            for (int i = 0; i < source.Length; i++)
             {
-                char let = html[i];
+                char let = source[i];
                 if (let == '<')
                 {
                     inside = true;
@@ -62,6 +69,11 @@ namespace PhantomNet
 
         public string ToAscii(string source)
         {
+            if (source == null)
+            {
+                return null;
+            }
+
             string unicode = "áàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴđĐ",
                      ascii = "aaaaaaaaaaaaaaaaaeeeeeeeeeeeiiiiiooooooooooooooooouuuuuuuuuuuyyyyyAAAAAAAAAAAAAAAAAEEEEEEEEEEEIIIIIOOOOOOOOOOOOOOOOOUUUUUUUUUUUYYYYYdD";
 
@@ -74,6 +86,11 @@ namespace PhantomNet
 
         public string ToUrlFriendly(string source)
         {
+            if (source == null)
+            {
+                return null;
+            }
+
             source = ToAscii(source).Trim().ToLower();
             source = source.Replace(' ', '-');
             source = source.Replace("&nbsp;", "-");
@@ -84,6 +101,21 @@ namespace PhantomNet
             }
             return source;
 
+        }
+
+        public string ProcessTagsForSaving(IEnumerable<string> tags)
+        {
+            return tags == null || tags.Count() == 0 ? null : string.Join("\n", tags.Select(x => x.Trim()));
+        }
+
+        public IEnumerable<string> ProcessTagsForEditting(string tags)
+        {
+            return (string.IsNullOrWhiteSpace(tags) ? string.Empty : tags).Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+        }
+
+        public string ProcessTagsForDisplaying(string tags)
+        {
+            return string.Join(", ", ProcessTagsForEditting(tags));
         }
     }
 }
