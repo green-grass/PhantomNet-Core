@@ -4,6 +4,7 @@
   "description": "PhantomNet-Core class library",
   "language": "en",
   "version": "1.0.0-rc1-*",
+  "authors": [ "Minh Nguyen" ],
 
   "packOptions": {
     "licenseUrl": "https://github.com/green-grass/PhantomNet-Core/blob/master/LICENSE",
