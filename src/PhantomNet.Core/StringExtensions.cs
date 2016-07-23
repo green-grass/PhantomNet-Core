@@ -42,7 +42,7 @@ namespace PhantomNet
 
             if (words.Length > 0)
             {
-                words[0] = words[0].ToLower();
+                words[0] = $"{words[0].Substring(0, 1).ToLower()}{words[0].Substring(1)}";
             }
 
             return string.Join(string.Empty, words);
