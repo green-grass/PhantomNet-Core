@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhantomNet.ComponentModel.DataAnnotations {
+namespace System.ComponentModel.DataAnnotations {
     using System;
     using System.Reflection;
     

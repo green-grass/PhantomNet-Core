@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace PhantomNet.ComponentModel.DataAnnotations
+﻿namespace System.ComponentModel.DataAnnotations
 {
     public class ResourcedRequiredAttribute : RequiredAttribute
     {
