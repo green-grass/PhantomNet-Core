@@ -117,16 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Please enter {0}." xml:space="preserve">
-    <value>Vui lòng nhập {0}.</value>
-  </data>
-  <data name="{0} is not a valid email address." xml:space="preserve">
+  <data name="EmailAddress" xml:space="preserve">
     <value>{0} không phải là một địa chỉ email hợp lệ.</value>
   </data>
-  <data name="{0} must have a maximum length of {1}." xml:space="preserve">
+  <data name="MaxLength" xml:space="preserve">
     <value>{0} chỉ chấp nhận tối đa {1} ký tự.</value>
   </data>
-  <data name="{0} must have a minimum length of {1}." xml:space="preserve">
+  <data name="MinLength" xml:space="preserve">
     <value>{0} phải có ít nhất {1} ký tự.</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Vui lòng nhập {0}.</value>
   </data>
 </root>
