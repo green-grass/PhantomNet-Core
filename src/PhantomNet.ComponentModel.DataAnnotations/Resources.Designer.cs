@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhantomNet {
+namespace PhantomNet.ComponentModel.DataAnnotations {
     using System;
     using System.Reflection;
     
@@ -22,13 +22,13 @@ namespace PhantomNet {
     // with the /str option, or rebuild your VS project.
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ValidationMessages {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
-        internal ValidationMessages() {
+        internal Resources() {
         }
         
         /// <summary>
@@ -38,7 +38,7 @@ namespace PhantomNet {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.Resources.ValidationMessages", typeof(ValidationMessages).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.ComponentModel.DataAnnotations.Resources", typeof(Resources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
