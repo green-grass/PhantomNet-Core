@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "PhantomNet.Core",
   "copyright": "Green Grass",
   "description": "PhantomNet.Core class library",
@@ -12,6 +12,7 @@
   },
 
   "dependencies": {
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation": "1.0.0",
     "NETStandard.Library": "1.6.0"
   },
 
