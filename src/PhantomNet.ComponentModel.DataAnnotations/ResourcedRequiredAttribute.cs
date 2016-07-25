@@ -5,7 +5,7 @@
         public ResourcedRequiredAttribute()
         {
             ErrorMessageResourceName = nameof(RequiredAttribute).Replace("Attribute", string.Empty);
-            ErrorMessageResourceType = typeof(Resources);
+            ErrorMessageResourceType = typeof(ValidationMessages);
         }
     }
 }

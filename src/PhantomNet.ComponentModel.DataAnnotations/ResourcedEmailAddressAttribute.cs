@@ -8,7 +8,7 @@
             : base(DataType.EmailAddress)
         {
             ErrorMessageResourceName = nameof(EmailAddressAttribute).Replace("Attribute", string.Empty);
-            ErrorMessageResourceType = typeof(Resources);
+            ErrorMessageResourceType = typeof(ValidationMessages);
         }
 
         public override bool IsValid(object value)

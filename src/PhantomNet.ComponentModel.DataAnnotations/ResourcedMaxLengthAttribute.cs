@@ -5,13 +5,13 @@
         public ResourcedMaxLengthAttribute() : base()
         {
             ErrorMessageResourceName = nameof(MaxLengthAttribute).Replace("Attribute", string.Empty);
-            ErrorMessageResourceType = typeof(Resources);
+            ErrorMessageResourceType = typeof(ValidationMessages);
         }
 
         public ResourcedMaxLengthAttribute(int length) : base(length)
         {
             ErrorMessageResourceName = nameof(MaxLengthAttribute).Replace("Attribute", string.Empty);
-            ErrorMessageResourceType = typeof(Resources);
+            ErrorMessageResourceType = typeof(ValidationMessages);
         }
     }
 }

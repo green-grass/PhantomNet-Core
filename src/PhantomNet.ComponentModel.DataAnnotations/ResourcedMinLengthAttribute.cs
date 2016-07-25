@@ -5,7 +5,7 @@
         public ResourcedMinLengthAttribute(int length) : base(length)
         {
             ErrorMessageResourceName = nameof(MinLengthAttribute).Replace("Attribute", string.Empty);
-            ErrorMessageResourceType = typeof(Resources);
+            ErrorMessageResourceType = typeof(ValidationMessages);
         }
     }
 }

@@ -6,7 +6,7 @@
         {
             return new GenericError {
                 Code = nameof(DefaultError),
-                Description = Resources.DefaultError
+                Description = Strings.DefaultError
             };
         }
     }
