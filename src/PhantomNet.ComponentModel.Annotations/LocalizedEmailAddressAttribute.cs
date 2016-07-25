@@ -2,9 +2,9 @@
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter,
         AllowMultiple = false)]
-    public class ResourcedEmailAddressAttribute : DataTypeAttribute
+    public class LocalizedEmailAddressAttribute : DataTypeAttribute
     {
-        public ResourcedEmailAddressAttribute()
+        public LocalizedEmailAddressAttribute()
             : base(DataType.EmailAddress)
         {
             ErrorMessageResourceName = nameof(EmailAddressAttribute).Replace("Attribute", string.Empty);

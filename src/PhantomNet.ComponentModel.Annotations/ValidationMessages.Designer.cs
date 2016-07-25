@@ -38,7 +38,7 @@ namespace System.ComponentModel.DataAnnotations {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.ComponentModel.DataAnnotations.ValidationMessages", typeof(ValidationMessages).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.ComponentModel.Annotations.ValidationMessages", typeof(ValidationMessages).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

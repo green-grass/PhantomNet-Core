@@ -1,14 +1,14 @@
 ﻿namespace System.ComponentModel.DataAnnotations
 {
-    public class ResourcedMaxLengthAttribute : MaxLengthAttribute
+    public class LocalizedMaxLengthAttribute : MaxLengthAttribute
     {
-        public ResourcedMaxLengthAttribute() : base()
+        public LocalizedMaxLengthAttribute() : base()
         {
             ErrorMessageResourceName = nameof(MaxLengthAttribute).Replace("Attribute", string.Empty);
             ErrorMessageResourceType = typeof(ValidationMessages);
         }
 
-        public ResourcedMaxLengthAttribute(int length) : base(length)
+        public LocalizedMaxLengthAttribute(int length) : base(length)
         {
             ErrorMessageResourceName = nameof(MaxLengthAttribute).Replace("Attribute", string.Empty);
             ErrorMessageResourceType = typeof(ValidationMessages);

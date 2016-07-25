@@ -1,8 +1,8 @@
 ﻿namespace System.ComponentModel.DataAnnotations
 {
-    public class ResourcedRequiredAttribute : RequiredAttribute
+    public class LocalizedRequiredAttribute : RequiredAttribute
     {
-        public ResourcedRequiredAttribute()
+        public LocalizedRequiredAttribute()
         {
             ErrorMessageResourceName = nameof(RequiredAttribute).Replace("Attribute", string.Empty);
             ErrorMessageResourceType = typeof(ValidationMessages);

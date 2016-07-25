@@ -63,4 +63,4 @@ $revision = "{0:D4}" -f [convert]::ToInt32($revision, 10)
 
 exec { & dotnet pack .\src\PhantomNet.Core -c Release -o .\artifacts --version-suffix=$revision }
 exec { & dotnet pack .\src\PhantomNet.Resources -c Release -o .\artifacts --version-suffix=$revision }
-exec { & dotnet pack .\src\PhantomNet.ComponentModel.DataAnnotations -c Release -o .\artifacts --version-suffix=$revision }
+exec { & dotnet pack .\src\PhantomNet.ComponentModel.Annotations -c Release -o .\artifacts --version-suffix=$revision }
