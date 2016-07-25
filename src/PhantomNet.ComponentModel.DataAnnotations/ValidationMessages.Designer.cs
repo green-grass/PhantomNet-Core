@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhantomNet {
+namespace System.ComponentModel.DataAnnotations {
     using System;
     using System.Reflection;
     
@@ -22,13 +22,13 @@ namespace PhantomNet {
     // with the /str option, or rebuild your VS project.
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class ValidationMessages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
-        internal Resources() {
+        internal ValidationMessages() {
         }
         
         /// <summary>
@@ -38,7 +38,7 @@ namespace PhantomNet {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.Core.Resources", typeof(Resources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.ComponentModel.DataAnnotations.ValidationMessages", typeof(ValidationMessages).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -60,11 +60,38 @@ namespace PhantomNet {
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to An unknown failure has occured..
+        ///    Looks up a localized string similar to {0} is not a valid e-mail address..
         /// </summary>
-        public static string DefaultError {
+        public static string EmailAddress {
             get {
-                return ResourceManager.GetString("DefaultError", resourceCulture);
+                return ResourceManager.GetString("EmailAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to {0} must have a maximum length of {1}..
+        /// </summary>
+        public static string MaxLength {
+            get {
+                return ResourceManager.GetString("MaxLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to {0} must have a minimum length of {1}..
+        /// </summary>
+        public static string MinLength {
+            get {
+                return ResourceManager.GetString("MinLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to Please enter {0}..
+        /// </summary>
+        public static string Required {
+            get {
+                return ResourceManager.GetString("Required", resourceCulture);
             }
         }
     }
