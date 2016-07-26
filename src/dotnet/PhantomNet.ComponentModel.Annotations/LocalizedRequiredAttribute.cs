@@ -1,4 +1,6 @@
-﻿namespace System.ComponentModel.DataAnnotations
+﻿using System.ComponentModel.DataAnnotations.Resources;
+
+namespace System.ComponentModel.DataAnnotations
 {
     public class LocalizedRequiredAttribute : RequiredAttribute
     {
