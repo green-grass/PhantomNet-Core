@@ -62,5 +62,5 @@ $revision = "{0:D4}" -f [convert]::ToInt32($revision, 10)
 # exec { & dotnet test .\test\PhantomNet.Core.Tests -c Release }
 
 exec { & dotnet pack .\src\PhantomNet.Core -c Release -o .\artifacts --version-suffix=$revision }
-exec { & dotnet pack .\src\PhantomNet.SharedStrings -c Release -o .\artifacts --version-suffix=$revision }
+exec { & dotnet pack .\src\extensions\PhantomNet.SharedStrings -c Release -o .\artifacts --version-suffix=$revision }
 exec { & dotnet pack .\src\dotnet\PhantomNet.ComponentModel.Annotations -c Release -o .\artifacts --version-suffix=$revision }
