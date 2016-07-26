@@ -1,4 +1,4 @@
-﻿namespace PhantomNet.SharedStrings
+﻿namespace PhantomNet
 {
     public class CommonStrings { }
 }
