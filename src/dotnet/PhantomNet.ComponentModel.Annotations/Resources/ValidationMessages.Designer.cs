@@ -60,7 +60,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to {0} is not a valid e-mail address..
+        ///    Looks up a localized string similar to {0} is not a valid email address..
         /// </summary>
         public static string EmailAddress {
             get {
