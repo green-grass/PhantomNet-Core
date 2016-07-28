@@ -1,6 +1,6 @@
 ﻿namespace PhantomNet.ComponentModel.DataAnnotations
 {
-    public class StringLengths
+    public static class StringLengths
     {
         public const int PersonTitle = 10;
         public const int FullName = 50;
