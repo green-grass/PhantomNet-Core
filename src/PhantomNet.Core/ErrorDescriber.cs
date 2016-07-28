@@ -1,4 +1,6 @@
-﻿namespace PhantomNet
+﻿using PhantomNet.Core;
+
+namespace PhantomNet
 {
     public class ErrorDescriber
     {
@@ -6,7 +8,7 @@
         {
             return new GenericError {
                 Code = nameof(DefaultError),
-                Description = Strings.DefaultError
+                Description = Resources.DefaultError
             };
         }
     }

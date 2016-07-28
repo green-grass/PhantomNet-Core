@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Resources;
+﻿using PhantomNet.ComponentModel.DataAnnotations.Resources;
 
 namespace System.ComponentModel.DataAnnotations
 {

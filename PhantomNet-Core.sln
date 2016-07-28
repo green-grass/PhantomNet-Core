@@ -14,13 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.Core", "src\PhantomNet.Core\PhantomNet.Core.xproj", "{4CF2E321-D135-486C-9AEF-47DB5A5F9C83}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{A229DA7F-06FE-44EB-B2D6-0B0220616C31}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.ComponentModel.Annotations", "src\dotnet\PhantomNet.ComponentModel.Annotations\PhantomNet.ComponentModel.Annotations.xproj", "{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extensions", "extensions", "{E45D9106-6CCD-4B28-9095-FF04A10D8383}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.SharedStrings", "src\extensions\PhantomNet.SharedStrings\PhantomNet.SharedStrings.xproj", "{7B193CA1-0F46-4591-BFEA-F707A932CD92}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.ComponentModel.Annotations", "src\PhantomNet.ComponentModel.Annotations\PhantomNet.ComponentModel.Annotations.xproj", "{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,23 +30,22 @@ Global
 		{4CF2E321-D135-486C-9AEF-47DB5A5F9C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF2E321-D135-486C-9AEF-47DB5A5F9C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF2E321-D135-486C-9AEF-47DB5A5F9C83}.Release|Any CPU.Build.0 = Release|Any CPU
-		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B193CA1-0F46-4591-BFEA-F707A932CD92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B193CA1-0F46-4591-BFEA-F707A932CD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B193CA1-0F46-4591-BFEA-F707A932CD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B193CA1-0F46-4591-BFEA-F707A932CD92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4CF2E321-D135-486C-9AEF-47DB5A5F9C83} = {46389E31-4663-4ED4-B7AF-C47555462CB3}
-		{A229DA7F-06FE-44EB-B2D6-0B0220616C31} = {46389E31-4663-4ED4-B7AF-C47555462CB3}
-		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8} = {A229DA7F-06FE-44EB-B2D6-0B0220616C31}
 		{E45D9106-6CCD-4B28-9095-FF04A10D8383} = {46389E31-4663-4ED4-B7AF-C47555462CB3}
 		{7B193CA1-0F46-4591-BFEA-F707A932CD92} = {E45D9106-6CCD-4B28-9095-FF04A10D8383}
+		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8} = {46389E31-4663-4ED4-B7AF-C47555462CB3}
 	EndGlobalSection
 EndGlobal
