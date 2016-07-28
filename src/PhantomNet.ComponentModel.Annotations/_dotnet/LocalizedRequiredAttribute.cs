@@ -1,6 +1,4 @@
-﻿using PhantomNet.ComponentModel.DataAnnotations.Resources;
-
-namespace System.ComponentModel.DataAnnotations
+﻿namespace System.ComponentModel.DataAnnotations
 {
     public class LocalizedRequiredAttribute : RequiredAttribute
     {

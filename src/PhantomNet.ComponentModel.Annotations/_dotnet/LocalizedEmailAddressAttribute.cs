@@ -1,6 +1,4 @@
-﻿using PhantomNet.ComponentModel.DataAnnotations.Resources;
-
-namespace System.ComponentModel.DataAnnotations
+﻿namespace System.ComponentModel.DataAnnotations
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter,
         AllowMultiple = false)]

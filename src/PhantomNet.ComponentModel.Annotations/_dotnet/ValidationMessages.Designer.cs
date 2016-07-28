@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhantomNet.ComponentModel.DataAnnotations.Resources {
+namespace System.ComponentModel.DataAnnotations {
     using System;
     using System.Reflection;
     
@@ -38,7 +38,7 @@ namespace PhantomNet.ComponentModel.DataAnnotations.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.ComponentModel.Annotations.Resources.ValidationMessages", typeof(ValidationMessages).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.ComponentModel.Annotations._dotnet.ValidationMessages", typeof(ValidationMessages).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
