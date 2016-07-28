@@ -19,5 +19,9 @@
 
         public const int CreditCardNumber = 16;
         public const int CreditCardSecurityCode = 4;
+
+        public const int LanguageCode = 2;
+        public const int CountryCode = 2;
+        public const int CultureCode = 5;
     }
 }
