@@ -1,4 +1,6 @@
-﻿namespace System.ComponentModel.DataAnnotations
+﻿using PhantomNet.ComponentModel.DataAnnotations.Resources;
+
+namespace System.ComponentModel.DataAnnotations
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter,
         AllowMultiple = false)]
@@ -8,7 +10,7 @@
             : base(DataType.EmailAddress)
         {
             ErrorMessageResourceName = nameof(EmailAddressAttribute).Replace("Attribute", string.Empty);
-            ErrorMessageResourceType = typeof(ValidationMessages);
+            ErrorMessageResourceType = typeof(CommonValidationMessages);
         }
 
         public override bool IsValid(object value)
