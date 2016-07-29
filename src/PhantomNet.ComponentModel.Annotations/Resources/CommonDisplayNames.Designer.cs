@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhantomNet.ComponentModel.DataAnnotations.SharedResources {
+namespace PhantomNet.ComponentModel.DataAnnotations.Resources {
     using System;
     using System.Reflection;
     
@@ -22,13 +22,13 @@ namespace PhantomNet.ComponentModel.DataAnnotations.SharedResources {
     // with the /str option, or rebuild your VS project.
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class CommonValidationMessages {
+    public class CommonDisplayNames {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
-        internal CommonValidationMessages() {
+        internal CommonDisplayNames() {
         }
         
         /// <summary>
@@ -38,7 +38,7 @@ namespace PhantomNet.ComponentModel.DataAnnotations.SharedResources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.ComponentModel.Annotations.SharedResources.CommonValidationMessages", typeof(CommonValidationMessages).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhantomNet.ComponentModel.Annotations.Resources.CommonDisplayNames", typeof(CommonDisplayNames).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -60,38 +60,38 @@ namespace PhantomNet.ComponentModel.DataAnnotations.SharedResources {
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to {0} is not a valid email address..
+        ///    Looks up a localized string similar to Email.
         /// </summary>
-        public static string EmailAddress {
+        public static string Email {
             get {
-                return ResourceManager.GetString("EmailAddress", resourceCulture);
+                return ResourceManager.GetString("Email", resourceCulture);
             }
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to {0} must have a maximum length of {1}..
+        ///    Looks up a localized string similar to Full Name.
         /// </summary>
-        public static string MaxLength {
+        public static string FullName {
             get {
-                return ResourceManager.GetString("MaxLength", resourceCulture);
+                return ResourceManager.GetString("FullName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to {0} must have a minimum length of {1}..
+        ///    Looks up a localized string similar to Message.
         /// </summary>
-        public static string MinLength {
+        public static string Message {
             get {
-                return ResourceManager.GetString("MinLength", resourceCulture);
+                return ResourceManager.GetString("Message", resourceCulture);
             }
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to Please enter {0}..
+        ///    Looks up a localized string similar to Phone Number.
         /// </summary>
-        public static string Required {
+        public static string PhoneNumber {
             get {
-                return ResourceManager.GetString("Required", resourceCulture);
+                return ResourceManager.GetString("PhoneNumber", resourceCulture);
             }
         }
     }

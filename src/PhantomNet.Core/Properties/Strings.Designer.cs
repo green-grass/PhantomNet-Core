@@ -5,10 +5,10 @@ namespace PhantomNet.Core
     using System.Reflection;
     using System.Resources;
 
-    internal static class Resources
+    internal static class Strings
     {
         private static readonly ResourceManager _resourceManager
-            = new ResourceManager("PhantomNet.Core.Resources", typeof(Resources).GetTypeInfo().Assembly);
+            = new ResourceManager("PhantomNet.Core.Strings", typeof(Strings).GetTypeInfo().Assembly);
 
         /// <summary>
         /// An unknown failure has occured.
