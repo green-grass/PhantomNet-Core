@@ -8,7 +8,7 @@ namespace PhantomNet
     {
         public string ProcessTagsForSaving(IEnumerable<string> tags)
         {
-            return tags == null || tags.Count() == 0 ? null : string.Join("\n", tags.Select(x => x.Trim()));
+            return tags == null || tags.Select(x => x.Trim()).Count() == 0 ? null : $"\n{string.Join("\n", tags.Select(x => x.Trim()))}\n";
         }
 
         public IEnumerable<string> ProcessTagsForEditting(string tags)
