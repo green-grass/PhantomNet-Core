@@ -1,5 +1,6 @@
 ﻿namespace System.Linq.Expressions
 {
+    // http://www.albahari.com/nutshell/predicatebuilder.aspx
     public static class PredicateBuilder
     {
         public static Expression<Func<T, bool>> True<T>() { return f => true; }
