@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace PhantomNet
 {
-    public class StringProcessor
+    public class TagProcessor
     {
         public string ProcessTagsForSaving(IEnumerable<string> tags)
         {
@@ -19,6 +19,21 @@ namespace PhantomNet
         public string ProcessTagsForDisplaying(string tags)
         {
             return string.Join(", ", ProcessTagsForEditting(tags));
+        }
+
+        public string UrlEncodeTag(string tag)
+        {
+            return tag?.Replace(" ", "-");
+        }
+
+        public string UrlDecodeTag(string tag)
+        {
+            return tag?.Replace("-", " ");
+        }
+
+        public string HtmlDecodeTag(string tag)
+        {
+            return tag?.Replace("_", "-");
         }
     }
 }
