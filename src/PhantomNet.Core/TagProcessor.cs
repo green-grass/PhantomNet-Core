@@ -21,6 +21,36 @@ namespace PhantomNet
             return string.Join(", ", ProcessTagsForEditting(tags));
         }
 
+        public string NormalizeTag(string tag)
+        {
+            if (tag == null)
+            {
+                throw new ArgumentNullException(nameof(tag));
+            }
+
+            while (tag.Contains("--"))
+            {
+                tag = tag.Replace("--", "-");
+            }
+
+            while(tag.Contains("  "))
+            {
+                tag = tag.Replace("  ", " ");
+            }
+
+            return tag.Replace("-", "--").Trim();
+        }
+
+        public string NormalizeTags(string tags)
+        {
+            var tagsAsArray = ProcessTagsForEditting(tags).ToArray();
+            for (var i = 0; i < tagsAsArray.Length; i++)
+            {
+                tagsAsArray[i] = NormalizeTag(tagsAsArray[i]);
+            }
+            return ProcessTagsForSaving(tagsAsArray.Distinct());
+        }
+
         public string UrlEncodeTag(string tag)
         {
             return tag?.Replace(" ", "-");
