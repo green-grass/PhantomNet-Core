@@ -4,23 +4,8 @@ using System.Linq;
 
 namespace PhantomNet
 {
-    public class TagProcessor
+    public class TagProcessor : ITagProcessor
     {
-        public string ProcessTagsForSaving(IEnumerable<string> tags)
-        {
-            return tags == null || tags.Select(x => x).Count() == 0 ? null : $"\n{string.Join("\n", tags.Select(x => x))}\n";
-        }
-
-        public IEnumerable<string> ProcessTagsForEditting(string tags)
-        {
-            return (string.IsNullOrWhiteSpace(tags) ? string.Empty : tags).Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
-        }
-
-        public string ProcessTagsForDisplaying(string tags)
-        {
-            return string.Join(", ", ProcessTagsForEditting(tags));
-        }
-
         public string NormalizeTag(string tag)
         {
             if (tag == null)
@@ -33,7 +18,7 @@ namespace PhantomNet
                 tag = tag.Replace("--", "-");
             }
 
-            while(tag.Contains("  "))
+            while (tag.Contains("  "))
             {
                 tag = tag.Replace("  ", " ");
             }
@@ -49,6 +34,21 @@ namespace PhantomNet
                 tagsAsArray[i] = NormalizeTag(tagsAsArray[i]);
             }
             return ProcessTagsForSaving(tagsAsArray.Distinct());
+        }
+
+        public string ProcessTagsForSaving(IEnumerable<string> tags)
+        {
+            return tags == null || tags.Select(x => x).Count() == 0 ? null : $"\n{string.Join("\n", tags.Select(x => x))}\n";
+        }
+
+        public IEnumerable<string> ProcessTagsForEditting(string tags)
+        {
+            return (string.IsNullOrWhiteSpace(tags) ? string.Empty : tags).Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+        }
+
+        public string ProcessTagsForDisplaying(string tags)
+        {
+            return string.Join(", ", ProcessTagsForEditting(tags));
         }
 
         public string UrlEncodeTag(string tag)
