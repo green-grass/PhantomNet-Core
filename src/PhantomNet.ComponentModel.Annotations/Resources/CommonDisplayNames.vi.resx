@@ -147,6 +147,9 @@
   <data name="PhoneNumber" xml:space="preserve">
     <value>Điện Thoại</value>
   </data>
+  <data name="Reviews" xml:space="preserve">
+    <value>Nhận Xét</value>
+  </data>
   <data name="Tags" xml:space="preserve">
     <value>Tag</value>
   </data>
