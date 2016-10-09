@@ -123,6 +123,9 @@
   <data name="Categories" xml:space="preserve">
     <value>Danh Mục</value>
   </data>
+  <data name="Content" xml:space="preserve">
+    <value>Nội Dung</value>
+  </data>
   <data name="DescriptionMeta" xml:space="preserve">
     <value>Meta Description</value>
   </data>
@@ -143,6 +146,9 @@
   </data>
   <data name="Name" xml:space="preserve">
     <value>Tên</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Ghi Chú</value>
   </data>
   <data name="Overview" xml:space="preserve">
     <value>Tổng Quan</value>

@@ -78,6 +78,15 @@ namespace PhantomNet.ComponentModel.DataAnnotations.Resources {
         }
         
         /// <summary>
+        ///    Looks up a localized string similar to Content.
+        /// </summary>
+        public static string Content {
+            get {
+                return ResourceManager.GetString("Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///    Looks up a localized string similar to Description Meta.
         /// </summary>
         public static string DescriptionMeta {
@@ -137,6 +146,15 @@ namespace PhantomNet.ComponentModel.DataAnnotations.Resources {
         public static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to Notes.
+        /// </summary>
+        public static string Notes {
+            get {
+                return ResourceManager.GetString("Notes", resourceCulture);
             }
         }
         
