@@ -60,11 +60,38 @@ namespace PhantomNet.ComponentModel.DataAnnotations.Resources {
         }
         
         /// <summary>
+        ///    Looks up a localized string similar to Categories.
+        /// </summary>
+        public static string Categories {
+            get {
+                return ResourceManager.GetString("Categories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to Description Meta.
+        /// </summary>
+        public static string DescriptionMeta {
+            get {
+                return ResourceManager.GetString("DescriptionMeta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///    Looks up a localized string similar to Email.
         /// </summary>
         public static string Email {
             get {
                 return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to Filters.
+        /// </summary>
+        public static string Filters {
+            get {
+                return ResourceManager.GetString("Filters", resourceCulture);
             }
         }
         
@@ -78,6 +105,15 @@ namespace PhantomNet.ComponentModel.DataAnnotations.Resources {
         }
         
         /// <summary>
+        ///    Looks up a localized string similar to Keywords Meta.
+        /// </summary>
+        public static string KeywordsMeta {
+            get {
+                return ResourceManager.GetString("KeywordsMeta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///    Looks up a localized string similar to Message.
         /// </summary>
         public static string Message {
@@ -87,11 +123,65 @@ namespace PhantomNet.ComponentModel.DataAnnotations.Resources {
         }
         
         /// <summary>
+        ///    Looks up a localized string similar to Name.
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to Overview.
+        /// </summary>
+        public static string Overview {
+            get {
+                return ResourceManager.GetString("Overview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///    Looks up a localized string similar to Phone Number.
         /// </summary>
         public static string PhoneNumber {
             get {
                 return ResourceManager.GetString("PhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to Tags.
+        /// </summary>
+        public static string Tags {
+            get {
+                return ResourceManager.GetString("Tags", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to Title.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to URL Friendly Name.
+        /// </summary>
+        public static string UrlFriendlyName {
+            get {
+                return ResourceManager.GetString("UrlFriendlyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to URL Friendly Title.
+        /// </summary>
+        public static string UrlFriendlyTitle {
+            get {
+                return ResourceManager.GetString("UrlFriendlyTitle", resourceCulture);
             }
         }
     }
