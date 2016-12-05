@@ -150,6 +150,15 @@ namespace PhantomNet.ComponentModel.DataAnnotations.Resources {
         }
         
         /// <summary>
+        ///    Looks up a localized string similar to Nationality.
+        /// </summary>
+        public static string Nationality {
+            get {
+                return ResourceManager.GetString("Nationality", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///    Looks up a localized string similar to Notes.
         /// </summary>
         public static string Notes {

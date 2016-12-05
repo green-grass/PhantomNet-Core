@@ -147,6 +147,9 @@
   <data name="Name" xml:space="preserve">
     <value>Tên</value>
   </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Quốc Tịch</value>
+  </data>
   <data name="Notes" xml:space="preserve">
     <value>Ghi Chú</value>
   </data>
