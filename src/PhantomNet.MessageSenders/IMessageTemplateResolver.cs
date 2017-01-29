@@ -1,4 +1,4 @@
-﻿namespace PhantomNet.MessageSender
+﻿namespace PhantomNet.MessageSenders
 {
     public interface IMessageTemplateResolver
     {

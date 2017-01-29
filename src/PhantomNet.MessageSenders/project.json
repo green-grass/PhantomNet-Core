@@ -1,0 +1,25 @@
+﻿{
+  "title": "PhantomNet.MessageSenders",
+  "copyright": "Green Grass",
+  "description": "PhantomNet.MessageSenders class library",
+  "language": "en",
+  "version": "1.0.3-beta-*",
+  "authors": [ "Minh Nguyen" ],
+
+  "packOptions": {
+    "licenseUrl": "https://github.com/green-grass/PhantomNet-Core/blob/master/LICENSE",
+    "projectUrl": "https://github.com/green-grass/PhantomNet-Core"
+  },
+
+  "dependencies": {
+    "Microsoft.Extensions.Options": "1.0.0",
+    "NETStandard.Library": "1.6.0",
+    "MailKit": "1.4.2.1"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

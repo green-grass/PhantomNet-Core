@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.IO;
 
-namespace PhantomNet.MessageSender
+namespace PhantomNet.MessageSenders
 {
     public class MessageTemplateResolver : IMessageTemplateResolver
     {

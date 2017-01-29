@@ -5,7 +5,7 @@ using MailKit.Net.Smtp;
 using Microsoft.Extensions.Options;
 using MimeKit;
 
-namespace PhantomNet.MessageSender
+namespace PhantomNet.MessageSenders
 {
     public class EmailSender : IEmailSender
     {

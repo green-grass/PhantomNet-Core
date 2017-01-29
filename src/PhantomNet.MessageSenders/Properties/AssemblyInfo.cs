@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PhantomNet.MessageSender")]
+[assembly: AssemblyProduct("PhantomNet.MessageSenders")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -16,4 +16,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8df9e399-b7d1-4b47-a7b8-6f95db31e77a")]
+[assembly: Guid("82a22bc2-36cc-4ec1-b359-752b6cc4a646")]

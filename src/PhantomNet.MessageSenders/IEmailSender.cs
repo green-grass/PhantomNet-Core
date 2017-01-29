@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace PhantomNet.MessageSender
+namespace PhantomNet.MessageSenders
 {
     public interface IEmailSender
     {

@@ -7,8 +7,8 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>8df9e399-b7d1-4b47-a7b8-6f95db31e77a</ProjectGuid>
-    <RootNamespace>PhantomNet.MessageSender</RootNamespace>
+    <ProjectGuid>82a22bc2-36cc-4ec1-b359-752b6cc4a646</ProjectGuid>
+    <RootNamespace>PhantomNet.MessageSenders</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
