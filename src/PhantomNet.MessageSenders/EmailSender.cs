@@ -50,7 +50,7 @@ namespace PhantomNet.MessageSenders
             var body = template;
             foreach (var key in replacements.Keys)
             {
-                body = body.Replace(key, replacements[key]);
+                body = body.Replace($"{{{key}}}", replacements[key]);
             }
 
             return SendEmailAsync(senderName, senderEmail, receiverName, receiverEmail, subject, body);
