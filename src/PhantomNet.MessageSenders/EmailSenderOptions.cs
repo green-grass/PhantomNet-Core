@@ -1,5 +1,7 @@
 ﻿namespace PhantomNet.MessageSenders
 {
+    public class EmailSenderOptions<TMarker> : EmailSenderOptions { }
+
     public class EmailSenderOptions
     {
         public class SmtpOptions

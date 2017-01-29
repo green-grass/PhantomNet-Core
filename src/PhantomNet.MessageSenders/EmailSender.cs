@@ -7,6 +7,15 @@ using MimeKit;
 
 namespace PhantomNet.MessageSenders
 {
+    public class EmailSender<TMarker> : EmailSender, IEmailSender<TMarker>
+    {
+        public EmailSender(
+            IMessageTemplateResolver<TMarker> messageTemplateResolver,
+            IOptions<EmailSenderOptions<TMarker>> emailSenderOptions)
+            : base(messageTemplateResolver, emailSenderOptions)
+        { }
+    }
+
     public class EmailSender : IEmailSender
     {
         public EmailSender(
@@ -39,7 +48,7 @@ namespace PhantomNet.MessageSenders
         {
             var template = TemplateResolver.ResolveTemplate(TemplatesLocation, templateName);
             var body = template;
-            foreach(var key in replacements.Keys)
+            foreach (var key in replacements.Keys)
             {
                 body = body.Replace(key, replacements[key]);
             }

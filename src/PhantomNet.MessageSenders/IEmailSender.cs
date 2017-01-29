@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 
 namespace PhantomNet.MessageSenders
 {
+    public interface IEmailSender<out TMarker> : IEmailSender { }
+
     public interface IEmailSender
     {
         Task SendEmailAsync(

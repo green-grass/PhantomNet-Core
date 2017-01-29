@@ -4,6 +4,8 @@ using System.IO;
 
 namespace PhantomNet.MessageSenders
 {
+    public class MessageTemplateResolver<TMarker> : MessageTemplateResolver, IMessageTemplateResolver<TMarker> { }
+
     public class MessageTemplateResolver : IMessageTemplateResolver
     {
         protected string Language => CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
