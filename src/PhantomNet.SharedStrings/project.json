@@ -15,6 +15,10 @@
     "NETStandard.Library": "1.6.0"
   },
 
+  "tooling": {
+    "defaultNamespace": "PhantomNet"
+  },
+
   "frameworks": {
     "netstandard1.6": {
       "imports": "dnxcore50"
