@@ -1,4 +1,4 @@
-﻿namespace PhantomNet
+﻿namespace PhantomNet.SharedStrings
 {
     public class ButtonStrings { }
 }
