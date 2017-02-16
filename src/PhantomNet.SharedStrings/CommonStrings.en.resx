@@ -132,4 +132,7 @@
   <data name="{0} (optional)" xml:space="preserve">
     <value>{0} (optional)</value>
   </data>
+  <data name="optional" xml:space="preserve">
+    <value>optional</value>
+  </data>
 </root>
