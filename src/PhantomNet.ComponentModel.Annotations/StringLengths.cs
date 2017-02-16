@@ -9,7 +9,7 @@
         public const int LongContent = 2000;
         public const int MaxContent = 4000;
 
-        public const int ConcurrencyStamp = 36;
+        public const int Guid = 36;
 
         public const int PersonTitle = 10;
         public const int FullName = 50;
