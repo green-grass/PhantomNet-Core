@@ -141,8 +141,14 @@
   <data name="New" xml:space="preserve">
     <value>New</value>
   </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>Register</value>

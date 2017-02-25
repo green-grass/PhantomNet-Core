@@ -141,8 +141,14 @@
   <data name="New" xml:space="preserve">
     <value>Tạo Mới</value>
   </data>
+  <data name="Next" xml:space="preserve">
+    <value>Kế Tiếp</value>
+  </data>
   <data name="OK" xml:space="preserve">
     <value>Đồng Ý</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Trước</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>Đăng Ký</value>
