@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "PhantomNet.MessageSenders",
   "copyright": "Green Grass",
   "description": "PhantomNet.MessageSenders class library",
@@ -12,14 +12,12 @@
   },
 
   "dependencies": {
-    "Microsoft.Extensions.Options": "1.0.0",
-    "NETStandard.Library": "1.6.0",
-    "MailKit": "1.4.2.1"
+    "MailKit": "1.12.0",
+    "Microsoft.Extensions.Options": "1.1.1",
+    "NETStandard.Library": "1.6.1"
   },
 
   "frameworks": {
-    "netstandard1.6": {
-      "imports": "dnxcore50"
-    }
+    "netstandard1.6": {}
   }
 }
