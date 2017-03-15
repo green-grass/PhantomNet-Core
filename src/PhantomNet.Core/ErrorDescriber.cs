@@ -1,4 +1,4 @@
-﻿using PhantomNet.Core;
+﻿using PhantomNet.Core.Properties;
 
 namespace PhantomNet
 {
