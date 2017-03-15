@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhantomNet.MessageSenders.Properties;
+using System;
 using System.Globalization;
 using System.IO;
 
@@ -33,7 +34,7 @@ namespace PhantomNet.MessageSenders
             }
             catch
             {
-                throw new IOException(Strings.FormatTemplateReadingError(templateName, location));
+                throw new IOException(string.Format(Strings.TemplateReadingError, templateName, location));
             }
         }
     }
