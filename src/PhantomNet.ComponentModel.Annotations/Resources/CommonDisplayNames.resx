@@ -126,6 +126,9 @@
   <data name="Content" xml:space="preserve">
     <value>Content</value>
   </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
   <data name="DescriptionMeta" xml:space="preserve">
     <value>Description Meta</value>
   </data>

@@ -126,6 +126,9 @@
   <data name="Content" xml:space="preserve">
     <value>Nội Dung</value>
   </data>
+  <data name="Date" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
   <data name="DescriptionMeta" xml:space="preserve">
     <value>Meta Description</value>
   </data>
