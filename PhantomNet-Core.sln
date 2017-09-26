@@ -1,24 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{46389E31-4663-4ED4-B7AF-C47555462CB3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37364069-98A3-4157-BFFE-463B3A172385}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
 		Build.ps1 = Build.ps1
-		global.json = global.json
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.Core", "src\PhantomNet.Core\PhantomNet.Core.xproj", "{4CF2E321-D135-486C-9AEF-47DB5A5F9C83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhantomNet.Core", "src\PhantomNet.Core\PhantomNet.Core.csproj", "{4CF2E321-D135-486C-9AEF-47DB5A5F9C83}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.ComponentModel.Annotations", "src\PhantomNet.ComponentModel.Annotations\PhantomNet.ComponentModel.Annotations.xproj", "{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhantomNet.ComponentModel.Annotations", "src\PhantomNet.ComponentModel.Annotations\PhantomNet.ComponentModel.Annotations.csproj", "{378F73F0-13E5-403D-AC03-34DCBDF9EBD8}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.SharedStrings", "src\PhantomNet.SharedStrings\PhantomNet.SharedStrings.xproj", "{7B193CA1-0F46-4591-BFEA-F707A932CD92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhantomNet.SharedStrings", "src\PhantomNet.SharedStrings\PhantomNet.SharedStrings.csproj", "{7B193CA1-0F46-4591-BFEA-F707A932CD92}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.MessageSenders", "src\PhantomNet.MessageSenders\PhantomNet.MessageSenders.xproj", "{82A22BC2-36CC-4EC1-B359-752B6CC4A646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhantomNet.MessageSenders", "src\PhantomNet.MessageSenders\PhantomNet.MessageSenders.csproj", "{82A22BC2-36CC-4EC1-B359-752B6CC4A646}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,5 +51,8 @@ Global
 		{378F73F0-13E5-403D-AC03-34DCBDF9EBD8} = {46389E31-4663-4ED4-B7AF-C47555462CB3}
 		{7B193CA1-0F46-4591-BFEA-F707A932CD92} = {46389E31-4663-4ED4-B7AF-C47555462CB3}
 		{82A22BC2-36CC-4EC1-B359-752B6CC4A646} = {46389E31-4663-4ED4-B7AF-C47555462CB3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E13E635-420A-4F67-B829-AE6A813343D8}
 	EndGlobalSection
 EndGlobal
