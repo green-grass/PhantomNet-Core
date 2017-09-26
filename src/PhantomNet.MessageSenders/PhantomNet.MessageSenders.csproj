@@ -4,7 +4,7 @@
     <Description>PhantomNet.MessageSenders class library</Description>
     <Copyright>Green Grass</Copyright>
     <AssemblyTitle>PhantomNet.MessageSenders</AssemblyTitle>
-    <Version>1.0.3</Version>
+    <VersionPrefix>1.0.3</VersionPrefix>
     <Authors>Minh Nguyen</Authors>
     <TargetFramework>netstandard1.6</TargetFramework>
     <AssemblyName>PhantomNet.MessageSenders</AssemblyName>
