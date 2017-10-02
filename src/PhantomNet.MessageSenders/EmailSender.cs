@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using MailKit.Net.Smtp;
 using Microsoft.Extensions.Options;
 using MimeKit;
+using System.Text.RegularExpressions;
+using MimeKit.Utils;
 
 namespace PhantomNet.MessageSenders
 {
@@ -22,16 +24,12 @@ namespace PhantomNet.MessageSenders
             IMessageTemplateResolver messageTemplateResolver,
             IOptions<EmailSenderOptions> emailSenderOptions)
         {
-            if (messageTemplateResolver == null)
-            {
-                throw new ArgumentNullException(nameof(messageTemplateResolver));
-            }
             if (emailSenderOptions == null)
             {
                 throw new ArgumentNullException(nameof(emailSenderOptions));
             }
 
-            TemplateResolver = messageTemplateResolver;
+            TemplateResolver = messageTemplateResolver ?? throw new ArgumentNullException(nameof(messageTemplateResolver));
             TemplatesLocation = emailSenderOptions.Value.TemplatesLocation;
             Smtp = emailSenderOptions.Value.Smtp;
         }
@@ -65,9 +63,26 @@ namespace PhantomNet.MessageSenders
             mailMessage.To.Add(new MailboxAddress(receiverName, receiverEmail));
             mailMessage.Subject = subject;
 
-            mailMessage.Body = new TextPart("html") {
-                Text = body
-            };
+            var inlineReplacements = new List<Tuple<string, string>>();
+            var builder = new BodyBuilder();
+            Regex regex = new Regex(@"([""'])cid:(?:(?=(\\?))\2.)*?\1");
+            var matches = regex.Matches(body);
+            foreach (Match match in matches)
+            {
+                var path = match.Value.Substring(5, match.Value.Length - 6);
+                var inline = builder.LinkedResources.Add(path);
+                inline.ContentId = MimeUtils.GenerateMessageId();
+                inlineReplacements.Add(new Tuple<string, string>(match.Value, $"\"cid:{inline.ContentId}\""));
+            }
+
+            foreach (var replacement in inlineReplacements)
+            {
+                body = body.Replace(replacement.Item1, replacement.Item2);
+            }
+
+            builder.HtmlBody = body;
+
+            mailMessage.Body = builder.ToMessageBody();
 
             using (var client = new SmtpClient())
             {
